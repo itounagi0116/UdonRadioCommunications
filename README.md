@@ -71,20 +71,4 @@ SaccFlightAndVehicles向けの統合アドオンです。周波数の管理、�
 
 ---
 
-### 追加資料(整備中)
-以下に、 **このスクリプトの機能** の簡単な説明を追加しています(LLMを用いて作成している為その点はご留意下さい)
-
-| **スクリプト名**                           | **説明**                                                                 |
-|-------------------------------------------|-------------------------------------------------------------------------|
-| **DFUNC_URC_Frequency**                  | 無線の周波数を調整するためのスクリプト。                                 |
-| **DFUNC_URC_PTT**                        | PTT (Push-To-Talk) 操作を制御するスクリプト。                            |
-| **DFUNC_URC_RX**                         | 受信モードの制御を行うスクリプト。                                       |
-| **Receiver**                             | 無線受信機の動作を管理。                                                |
-| **Transceiver**                          | 送受信機の統合動作を管理するスクリプト。                                 |
-| **Transmitter**                          | 無線送信機の動作を管理。                                                |
-| **UdonRadioCommunication**               | 無線通信システム全体のコントロールを提供。                              |
-| **DesktopOnly**                          | デスクトップモードでのみ動作するオブジェクトの管理。                     |
-| **RaycastBlocker**                       | デスクトップモードでのレイキャストを無効化。                             |
-| **TransceiverEnabledTrigger**            | トランシーバーの初期設定や有効化トリガーを制御。                         |
-| **TransceiverPickupTrigger**             | トランシーバーをピックアップした際の動作を制御。                         |
-
+[補足](https://github.com/itounagi0116/UdonRadioCommunication/blob/master/%E8%A3%9C%E8%B6%B3.md)
