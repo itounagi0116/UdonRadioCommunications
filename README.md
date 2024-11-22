@@ -1,7 +1,7 @@
 # UdonRadioCommunication  
 VRChat Udonワールド用の簡易的な無線通信システム
 
-[![GitHub license](https://img.shields.io/github/license/SeaeeesSan/SimpleFolderIcon)](https://github.com/SeaeeesSan/SimpleFolderIcon/blob/master/LICENSE)
+![ライセンスバッジ](https://img.shields.io/badge/ライセンス-MIT-007EC6)
 
 ![image](https://user-images.githubusercontent.com/2088693/219715229-396f0e71-921a-4e2e-814a-d814944c3fe8.png)  
 
