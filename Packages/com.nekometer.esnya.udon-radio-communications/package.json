@@ -16,18 +16,14 @@
   "author": {
     "name": "esnya"
   },
-  "gitDependencies": {
-    "com.merlinvr.udonsharp": "https://github.com/vrchat-community/UdonSharp.git?path=/Packages/com.vrchat.UdonSharp#1.0.1",
-    "com.vrchat.base": "https://github.com/vrchat/packages.git?path=/packages/com.vrchat.base#3.0.4",
-    "com.vrchat.worlds": "https://github.com/vrchat/packages.git?path=/packages/com.vrchat.worlds#3.0.4"
-  },
   "vpmDependencies": {
-    "com.vrchat.base": "3.0.4",
-    "com.merlinvr.udonsharp": "1.0.1",
-    "com.vrchat.worlds": "3.0.4"
+    "com.vrchat.base": "3.7.3",
+    "com.vrchat.udonsharp": "1.1.7",
+    "com.vrchat.worlds": "3.7.3"
   },
   "legacyFolders": {
-    "Assets\\UdonRadioCommunication": ""
+    "Assets\\UdonRadioCommunication": "",
+    "Assets\\Gizmos\\UdonSharp": "6e940dfc89ce4ca41b651e05bc21be6b"
   },
   "legacyPackages": [
     "com.vrchat.udonsharp"
