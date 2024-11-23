@@ -3,16 +3,10 @@
   "displayName": "Udon Radio Communications SaccFlight Integration",
   "version": "1.0.0-alpha.1",
   "description": "SaccFlight integration for Udon Radio Communications",
-  "gitDependencies": {
-    "com.merlinvr.udonsharp": "https://github.com/vrchat-community/UdonSharp.git?path=/Packages/com.vrchat.UdonSharp#1.0.1",
-    "com.vrchat.base": "https://github.com/vrchat/packages.git?path=/packages/com.vrchat.base#3.0.4",
-    "com.vrchat.worlds": "https://github.com/vrchat/packages.git?path=/packages/com.vrchat.worlds#3.0.4",
-    "com.nekometer.esnya.udon-radio-communications": "https://github.com/esnya/UdonRadioCommunications.git?path=Packages/com.nekometer.esnya.udon-radio-communications#5.0.0-alpha.9"
-  },
   "vpmDependencies": {
-    "com.merlinvr.udonsharp": "1.0.1",
-    "com.vrchat.base": "3.0.4",
-    "com.vrchat.worlds": "3.0.4",
+    "com.vrchat.base": "3.7.3",
+    "com.vrchat.udonsharp": "1.1.7",
+    "com.vrchat.worlds": "3.7.3",
     "com.nekometer.esnya.udon-radio-communications": "5.0.0-alpha.9"
   },
   "repository": {
@@ -25,6 +19,10 @@
   "license": "MIT",
   "unity": "2022.3",
   "legacyFolders": {
-    "Assets\\UdonRadioCommunication\\SaccFlightIntegration": ""
-  }
+    "Assets\\UdonRadioCommunication\\SaccFlightIntegration": "",
+    "Assets\\Gizmos\\UdonSharp": "6e940dfc89ce4ca41b651e05bc21be6b"
+  },
+  "legacyPackages": [
+    "com.vrchat.udonsharp"
+  ]
 }
