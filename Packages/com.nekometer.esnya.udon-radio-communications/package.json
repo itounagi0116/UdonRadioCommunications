@@ -21,8 +21,23 @@
     "com.vrchat.base": "https://github.com/vrchat/packages.git?path=/packages/com.vrchat.base#3.0.4",
     "com.vrchat.worlds": "https://github.com/vrchat/packages.git?path=/packages/com.vrchat.worlds#3.0.4"
   },
-  "legacyFolders": [
-    "Assets\\UdonRadioCommunication"
+  "vpmDependencies": {
+    "com.vrchat.base": "3.0.4",
+    "com.merlinvr.udonsharp": "1.0.1",
+    "com.vrchat.worlds": "3.0.4"
+  },
+  "legacyFolders": {
+    "Assets\\UdonRadioCommunication": ""
+  },
+  "legacyPackages": [
+    "com.vrchat.udonsharp"
   ],
-  "unity": "2019.4"
+  "samples": [
+    {
+      "displayName": "Basic Examples",
+      "description": "Basic usage examples for Udon Radio Communications",
+      "path": "Samples~/BasicExamples"
+    }
+  ],
+  "unity": "2022.3"
 }
