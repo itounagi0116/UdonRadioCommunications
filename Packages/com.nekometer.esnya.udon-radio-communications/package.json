@@ -32,12 +32,5 @@
   "legacyPackages": [
     "com.vrchat.udonsharp"
   ],
-  "samples": [
-    {
-      "displayName": "Basic Examples",
-      "description": "Basic usage examples for Udon Radio Communications",
-      "path": "Samples~/BasicExamples"
-    }
-  ],
   "unity": "2022.3"
 }
