@@ -30,5 +30,5 @@
     "semantic-release": "^20.1.0",
     "semantic-release-gitmoji": "^1.4.5"
   },
-  "unity": "2019.4"
+  "unity": "2022.3"
 }
