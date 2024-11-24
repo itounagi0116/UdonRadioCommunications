@@ -2,6 +2,8 @@
 
 ![ライセンスバッジ](https://img.shields.io/badge/ライセンス-MIT-007EC6)
 
+[日本語](https://github.com/itounagi0116/UdonRadioCommunications/blob/master/README_JP.md)
+
 Simplified radio communication system for VRChat Udon worlds.
 
 ![image](https://user-images.githubusercontent.com/2088693/219715229-396f0e71-921a-4e2e-814a-d814944c3fe8.png)
