@@ -83,3 +83,70 @@ DFUNCs（Dynamic Functions）を使用して、周波数の管理、受信の切
      `git+https://github.com/esnya/UdonRadioCommunications.git?path=/Packages/com.nekometer.esnya.udon-radio-communications-sf`  
    - **ベータ版リリース**:  
      `git+https://github.com/esnya/UdonRadioCommunications.git?path=/Packages/com.nekometer.esnya.udon-radio-communications-sf#beta`  
+
+---
+
+## LLMの補足
+
+esnya/UdonRadioCommunications は、VRChatのUdonワールド向けに開発された簡易的な無線通信システムです。このプロジェクトは、仮想空間内でのリアルタイム音声通信を実現し、特に航空機シミュレーションや車両操作との連携に特化した機能を提供します。以下に詳細を解説します：
+
+---
+
+### **1. プロジェクト概要**
+- **目的**: VRChatワールド内で、現実の無線通信に近い体験を再現するために開発されました。周波数設定や送受信の制御を通じ、複数プレイヤー間の音声通信を可能にします。
+- **特徴**:
+  - **軽量化**: Udonの計算負荷を考慮し、1つのUdonのみがUpdateループを使用する設計。
+  - **柔軟な設定**: 送信機（Transmitter）と受信機（Receiver）を自由に配置し、周波数や同期方法をカスタマイズ可能。
+  - **SaccFlightAndVehicles連携**: 航空機/車両シミュレーターとの統合をサポートし、Push-To-Talk（PTT）機能を提供。
+
+---
+
+### **2. 主要コンポーネント**
+- **Transmitter（送信機）**: プレイヤーが音声を送信するための装置。`DFUNC_URC_PTT.prefab` はPTT機能を実装したプレハブで、デスクトップキー（デフォルトはF1キー）で送信を制御します。
+- **Receiver（受信機）**: 特定の周波数に合わせた音声を受信する装置。「Exclusive」モードでは送信中に受信を自動停止します。
+- **UdonRadioCommunication**: シーンに1つ配置する中核コンポーネント。通信の同期と管理を担います。
+
+---
+
+### **3. インストール手順**
+1. **Unityプロジェクト設定**:
+   - VRChat Creator CompanionでUdonSharpを含むプロジェクトを作成。
+   - UnityのPackage ManagerからGit URLを追加：  
+     `git+https://github.com/esnya/UdonRadioCommunications.git?path=/Packages/com.nekometer.esnya.udon-radio-communications`  
+     （ベータ版は `#beta` を末尾に追加）。
+2. **オプション依存関係**:
+   - SaccFlightAndVehicles連携用パッケージは別途追加が必要。
+
+---
+
+### **4. 使用方法**
+- **基本設定**:
+  - 送信機と受信機をシーン内に配置。
+  - カスタムイベント `Activate`/`Deactivate` で通信の有効化・無効化を制御。
+  - 変数 `frequency` で周波数を設定。
+- **同期オプション**:
+  - `Sync` を有効にすると、近くのプレイヤー全員が受信可能。無効時はローカルクライアントのみ。
+- **パフォーマンス**:
+  - 計算量は `O(Np(Nt + Nr))`（プレイヤー数×送受信機数の合計）で、大規模ワールドでは最適化が推奨されます。
+
+---
+
+### **5. 技術的詳細**
+- **スクリプト**: UdonSharpを使用し、`MonoBehaviour` を拡張して通信ロジックを実装。
+- **キーバインド**: `desktopKey` プロパティでPTTキーをカスタマイズ可能（例：112はF1キーに対応）。
+- **依存ライブラリ**: InariUdonのインタラクションコンポーネントがサンプルプレハブで使用されます。
+
+---
+
+### **6. 応用例**
+- **航空機シミュレーター**: コックピット内の無機体感を強化。
+- **多人数協調プレイ**: チーム間の戦略的な音声通信を実現。
+- **イベント空間**: アナウンスシステムとしての活用。
+
+---
+
+### **7. 参考リソース**
+- **デモシーン**: リポジトリ内の `Demo.unity` で動作確認可能。
+- **作者情報**: 開発者esnyaは日本在住で、VRChat向けUdonツールを多数公開しています。
+
+このプロジェクトは、GitHubでMITライセンスの下で公開されており、自由に改変・再配布が可能です。詳細は[公式リポジトリ](https://github.com/esnya/UdonRadioCommunications)を参照してください。
