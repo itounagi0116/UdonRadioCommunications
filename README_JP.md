@@ -17,10 +17,8 @@ VRChatのUdonワールド向けに設計された、簡易的な無線通信シ�
 3. メニューの **Window** → **Package Manager** を開きます。  
 4. 「+」ボタンをクリックし、**`Add package from git URL`** を選択します。  
 5. 以下のURLを入力して「Add」ボタンをクリックします。  
-   - **安定版リリース**:  
-     `git+https://github.com/esnya/UdonRadioCommunications.git?path=/Packages/com.nekometer.esnya.udon-radio-communications`  
-   - **ベータ版リリース**:  
-     `git+https://github.com/esnya/UdonRadioCommunications.git?path=/Packages/com.nekometer.esnya.udon-radio-communications#beta`  
+   - **リリース**:  
+     `git+https://github.com/itounagi0116/UdonRadioCommunications.git?path=/Packages/com.nekometer.esnya.udon-radio-communications`  
 6. 必要に応じて[オプションの依存関係](#optional-dependencies)をインストールしてください。  
 
 ---
